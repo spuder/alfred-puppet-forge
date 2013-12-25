@@ -6,5 +6,5 @@ An alfred workflow that facilitates quick searching of the puppet forge
 [alfred] (http://www.alfredapp.com) 
 
 ![Screenshot1] (https://raw.github.com/spuder/alfred-puppet-forge/master/img/forge.png)
-![Screenshot2] (https://github.com/spuder/alfred-puppet-forge/blob/master/img/forge2.png)  
+![Screenshot2] (https://raw.github.com/spuder/alfred-puppet-forge/master/img/forge2.png)  
 
