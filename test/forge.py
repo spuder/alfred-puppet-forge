@@ -12,11 +12,14 @@ from xml.etree.ElementTree import Element, SubElement, Comment,  tostring
 args = sys.argv
 #print args[1]
 
+if len(sys.argv) == 1:
+	sys.exit("please specify a module to search for")
+
 forgeurl="https://forge.puppetlabs.com/modules.json?q="+str(args[1])
 jsonURL=urllib2.urlopen(forgeurl)
 jsonObject=json.load(jsonURL)
 
-print forgeurl
+
 
 # print jsonObject #For debugging
 
