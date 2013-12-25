@@ -6,15 +6,19 @@
 
 import json
 import urllib2
-# import sys
-# import requests
+import sys
 from xml.etree.ElementTree import Element, SubElement, Comment,  tostring
 
-forgeurl='https://forge.puppetlabs.com/modules.json?q=gitlab'
+args = sys.argv
+#print args[1]
+
+forgeurl="https://forge.puppetlabs.com/modules.json?q="+str(args[1])
 jsonURL=urllib2.urlopen(forgeurl)
 jsonObject=json.load(jsonURL)
 
-# print jsonObject#For debugging
+print forgeurl
+
+# print jsonObject #For debugging
 
 # Create a xml object that matches the documentaion 
 # http://www.alfredforum.com/topic/5-generating-feedback-in-workflows/
